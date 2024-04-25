@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+  }
+  
+  .wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: #293447;
+  }
+  
+  .game-details {
+    color: #B8C6DC;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: rgb(123, 201, 163);
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  }
+  
+  .board .food {
+    background:url('../../assets/gamesPicture/strawberry.png') center center/cover;
+  }
+  
+  .board .head {
+    background:url('../../assets/gamesPicture/head.jpg') center center/cover;
+  }
+  
+  .board .body {
+    background: url('../../assets/gamesPicture/bodygreen.jpg') center center/cover;
+  }
+  
+  .controls {
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      width: 90vmin;
+      height: 115vmin;
+    }
+    .game-details {
+      font-size: 1rem;
+      padding: 15px 27px;
+    }
+    .controls {
+      display: flex;
+    }
+    .controls i {
+      padding: 15px 0;
+      font-size: 1rem;
+    }
+  }
+  
